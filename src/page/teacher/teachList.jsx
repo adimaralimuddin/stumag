@@ -1,9 +1,11 @@
+
+
 import React, { useState } from "react"
 import Avatar from "../../component/Avatar"
 import Fields from '../../component/Fields'
 import { stuFields, testUsers } from "../../fields"
 
-export default function StuList(props) {
+export default function TeachList(props) {
 
 
     return (
@@ -26,7 +28,7 @@ export default function StuList(props) {
 
 function ListItem({ data }) {
 
-    
+
     if (!data) { return '' }
 
     const alter = false
@@ -38,8 +40,6 @@ function ListItem({ data }) {
         <div className='flx  itemCenter bb p3'>
             <img className='mnw40 mnh40 br90per' src="" alt="" />
             <p className='flx1 mlr10'>NAME</p>
-            <p className='flx1 mlr10 mxw150'>COURSE</p>
-            <p className='flx1 mlr10 mxw50'>YEAR</p>
             <p className='flx1 mlr10 mxw60'>ROLE</p>
             <p className='flx1 mlr10 mxw50'>AGE</p>
             <p className='flx1 mlr10 mxw60'>GENDER</p>
@@ -55,8 +55,6 @@ function ListItem({ data }) {
                 return <div className='flx list-item wrap p10 itemCenter'>
                     <Avatar></Avatar>
                     <pre className={cls}>{d?.name}</pre>
-                    <p className={cls + ' mxw150'}>{d?.course}</p>
-                    <p className={cls + ' mxw50'}>{d?.year}</p>
                     <p className={cls + ' mxw60'}>{d?.status}</p>
                     <p className={cls + ' mxw50'}>{d?.age}</p>
                     <p className={cls + ' mxw60'}>{d?.gender}</p>

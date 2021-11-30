@@ -11,6 +11,7 @@
 }
 .list-item {
     cursor: pointer;
+    padding-left:30px ;
 }
 .list-item:hover ,.list-item:hover p, .list-item:hover pre {
     background-color: rgb(165, 161, 191);

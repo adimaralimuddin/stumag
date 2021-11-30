@@ -1,7 +1,5 @@
 import { Routes, Route } from "react-router";
-import { stuPages } from "../../siteMap";
-import StuAdd from "./stuAdd";
-import StuList from "./StuList";
+import { stuPages,TeachPages } from "../../siteMap";
 import StuSidebar from "./StuSidebar";
 
 
@@ -15,6 +13,7 @@ export default function Student() {
 
                 <Route {...stuPages['']} />
                 <Route {...stuPages.list} />
+                <Route {...TeachPages.list} />
                 <Route {...stuPages.add} />
                 <Route {...stuPages.profile} />
                 <Route {...stuPages.subjects} />

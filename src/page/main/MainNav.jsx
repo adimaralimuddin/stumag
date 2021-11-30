@@ -8,10 +8,10 @@ export default function MainNav() {
     const { auth } = useAntext();
 
     return (
-        <div className='MainNav plr30 flxBetween contentCenter  p10  test w100per shadow1 mxh55 front itemCenter white'>
+        <div className='MainNav plr10per flxBetween contentCenter  p10  test w100per shadow1 mxh55 front itemCenter white'>
             <div>
-                <h1 className='cCrimson'
-                >local dev</h1>
+                <h2 className='logo'
+                >UScap solution</h2>
             </div>
             <nav className='flx itemCenter'>
                 <ul className='noStyle flxEvenly nav-ul '>
@@ -22,7 +22,7 @@ export default function MainNav() {
                         <Link to={site.dashboard.path}>Dashboard</Link>
                     </li>
                     <li className='ml5'>
-                        <Link to={site.student.path}>Student</Link>
+                        <Link to={site.student.path}>Users</Link>
                     </li>
 
                     <li className='ml5'>

@@ -14,7 +14,7 @@ export default function Fields(props) {
                 {
                     f?.label && <small className='ml5'>{f?.label}</small>
                 }
-                <select name="" id="">
+                <select name={f?.name} id="">
                     {
                         f?.options && f?.options.map(op => {
                             return <option value={op}>{op}</option>
