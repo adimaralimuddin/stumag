@@ -1,0 +1,22 @@
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+@font-face {
+    font-family: 'Material Icons';
+    font-display: block;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'), 
+         local('MaterialIcons-Regular'), 
+         url(https://fonts.gstatic.com/s/materialicons/v21/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2) format('woff2');
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    color: rgb(212, 0, 255);
+    /* opacity:0; */
+
+  }

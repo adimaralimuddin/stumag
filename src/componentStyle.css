@@ -1,0 +1,62 @@
+
+.fields {
+    /* border: 1px solid gainsboro; */
+}
+
+.fields:hover{
+    /* background-color: rgb(244, 244, 244); */
+}
+
+.list-item-true {
+    background-color: red;
+}
+.list-item {
+    /* background-color: red; */
+}
+.list-item:hover ,.list-item:hover p {
+    background-color: darkslateblue;
+    color: gainsboro;
+    transform: scale(1.01);
+    border-radius: 3px;
+    /* box-shadow: 1px 5px 0px rgb(58, 43, 79); */
+}
+
+
+
+.nav-ul li a {
+    color: rgb(82, 82, 82);
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.nav-ul li a:hover{
+    color: rgb(46, 46, 46);
+    /* font-weight: 500; */
+}
+
+.side-menu {
+        /* background-color: red; */
+        border-radius: 5px;
+        margin: 0 10px;
+        padding: 10px 20px ;
+        color: rgb(63, 63, 63);
+        text-align: left;
+        cursor: pointer;
+}
+.side-menu h3,.side-menu-min h3{
+    font-weight: 400;
+    font-size: 15px;
+}
+.side-menu:hover ,.side-menu-min:hover{
+    background-color: rgb(234, 234, 245);
+    color: black;
+}
+
+.side-menu-min{
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+    color: rgb(63, 63, 63);
+
+}
