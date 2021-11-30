@@ -1,7 +1,7 @@
 
 export default function Year({ label = true }) {
     return (
-        <span className='flxC textLeft'>
+        <span className='flxC textLeft m5 flx1 mxw200'>
             {
                 label && <label className='ml5' htmlFor="year">year</label>
             }

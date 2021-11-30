@@ -8,6 +8,8 @@ import Login from './page/main/Login'
 import StuAdd from './page/student/stuAdd'
 import StuList from './page/student/StuList'
 import StuProfile from './page/student/stuProfile'
+import Subjects from './page/student/Subjects'
+import Courses from './page/student/course/Courses'
 
 export default function useSite() {
     const site = {
@@ -62,5 +64,13 @@ export const stuPages = {
     profile: {
         path: 'profile',
         element: <StuProfile />
-    }
+    },
+    subjects:{
+        path:'subjects',
+        element:<Subjects/>
+    },
+    course:{
+        path:'course',
+        element:<Courses/>
+    },
 }

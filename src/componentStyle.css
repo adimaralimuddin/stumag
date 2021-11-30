@@ -1,24 +1,27 @@
 
-.fields {
-    /* border: 1px solid gainsboro; */
-}
-
-.fields:hover{
-    /* background-color: rgb(244, 244, 244); */
+.list-header, .list-header p{
+    background: darkslateblue;
+    color: gainsboro;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .list-item-true {
     background-color: red;
 }
 .list-item {
-    /* background-color: red; */
+    cursor: pointer;
 }
-.list-item:hover ,.list-item:hover p {
-    background-color: darkslateblue;
-    color: gainsboro;
+.list-item:hover ,.list-item:hover p, .list-item:hover pre {
+    background-color: rgb(165, 161, 191);
+    color: rgb(255, 255, 255);
     transform: scale(1.01);
     border-radius: 3px;
     /* box-shadow: 1px 5px 0px rgb(58, 43, 79); */
+}
+
+.list-item:hover:hover .material-icons {
+    /* color: rgb(255, 255, 255); */
 }
 
 
@@ -43,10 +46,12 @@
         color: rgb(63, 63, 63);
         text-align: left;
         cursor: pointer;
+        flex: 1;
 }
-.side-menu h3,.side-menu-min h3{
+.side-menu h3{
     font-weight: 400;
     font-size: 15px;
+    text-transform: capitalize;
 }
 .side-menu:hover ,.side-menu-min:hover{
     background-color: rgb(234, 234, 245);
@@ -54,9 +59,37 @@
 }
 
 .side-menu-min{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    flex: 1;
+    /* width: 100%; */
+    /* max-width: 50px;
     border-radius: 3px;
     padding: 5px;
     cursor: pointer;
     color: rgb(63, 63, 63);
+    flex: 1; */
 
+}
+
+.role-student{
+    background: rgb(223, 73, 23);
+    color: rgb(245, 245, 245);
+    font-size: 13px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.role-admin{
+    background: rgb(114, 16, 250);
+    color: rgb(245, 245, 245);
+    font-size: 13px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+div{
+    /* border: 2px red solid; */
 }

@@ -13,10 +13,12 @@ export default function Student() {
             <StuSidebar />
             <Routes>
 
+                <Route {...stuPages['']} />
                 <Route {...stuPages.list} />
                 <Route {...stuPages.add} />
                 <Route {...stuPages.profile} />
-                <Route {...stuPages['']} />
+                <Route {...stuPages.subjects} />
+                <Route {...stuPages.course} />
 
             </Routes>
 

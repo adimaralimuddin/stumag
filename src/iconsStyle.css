@@ -16,7 +16,24 @@
   
   .material-icons {
     font-family: 'Material Icons';
-    color: rgb(212, 0, 255);
+    color: rgb(96, 87, 135);
     /* opacity:0; */
 
+  }
+  .material-icons:hover {
+    /* font-family: 'Material Icons'; */
+    color: rgb(42, 0, 158);
+    /* opacity:0; */
+    transform: scale(1.2);
+  }
+
+  .material-icons.s {
+    font-size: 19px;
+  }
+
+  .material-icons.delete {
+    color: rgb(177, 54, 79);
+  }
+  .material-icons.delete:hover {
+    color: rgb(116, 0, 23);
   }

@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App vh100 flxC">
       <MainNav />
-      <div className='mt55 flx1'>
+      <div className='mt55 flxC flx1'>
         <Routers />
       </div>
     </div>

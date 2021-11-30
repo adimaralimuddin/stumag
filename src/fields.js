@@ -4,7 +4,7 @@ export const stuFields = [
     {
         type: 'input',
         name: 'name',
-        label: 'name'
+        label: 'name',
     },
     {
         type: 'input',
@@ -27,16 +27,20 @@ export const stuFields = [
         type: 'input',
         name: 'age',
         label: 'age',
-        className:'mxw30'
+        className: 'mxw30'
     }
 ]
 
 export const testUsers = [
     {
         name: 'bob marlye',
+        status: 'student',
         course: 'bsit',
         year: 2,
-        gender: 'male'
+        gender: 'male',
+        age: 23,
+        contact: '907384234',
+        address: 'san roquer santan drive'
     },
     {
         name: 'mike romeo',

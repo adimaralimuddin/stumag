@@ -3,43 +3,55 @@
 import Year from '../../component/fields/Year'
 import Course from '../../component/fields/Course'
 import Input from '../../component/fields/Input'
+import Select from '../../component/fields/Select'
+import Flex from '../../component/elements/Flex'
+import Box from '../../component/Box'
+import Div from '../../component/Div'
+import ProfileImg from '../../component/ProfileImg'
+import Names from '../../component/fields/Names'
+import Caption from '../../component/Caption'
+import BreadCrams from '../../component/BreadCrams'
 
 export default function StuAdd() {
 
-    const spanStyle = 'flxC mxw150 textLeft'
     return (
-        <div className='StuAdd p20 flxC flx1 itemCenter'>
+        <div className='StuAdd p20 flxC flx1 itemCenter '>
 
-            <div className='white p10 br10 w100per mxw900 shadow1'>
-                <form className=' p20 br10' action="" >
+            <Div flx1 w100per mxw900>
+                <form action="" >
 
-                    {/* name fields start */}
-                    <div className="flx wrap">
+                    <BreadCrams path='Student / add' >Add Student</BreadCrams>
 
-                        <Input
-                            name='firstName'
-                            label='firs tName'
-                        />
+                    <Caption>Primary Info</Caption>
 
-                        <Input
-                            name='lastName'
-                            label='last Name'
-                        />
+                    <Box p20>
+                        <br />
+                        <ProfileImg />
+                        <Names />
+                        <Flex>
+                            <Course />
+                            <Year />
 
-                        <Input
-                            name='middleName' label='middle Name'
-                        />
+                        </Flex>
+                        <br />
+                    </Box>
 
-                    </div> {/* name fields end  */}
+                    <Caption>Tuition</Caption>
+                    <Box wrap flx plr20>
+                        <Input label='Tuition Fee'></Input>
+                        <Input label='Balanced'></Input>
+                        <Input label='Paied'></Input>
+                        <Input label='Back Account'></Input>
+                    </Box>
 
-                    <div className="flx wrap">
-                        <Course />
-                        <Year />
-
-                    </div>
-
+                    <Caption>Contact</Caption>
+                    <Box flx wrap plr20>
+                        <Input label='mobile Number'></Input>
+                        <Input label='Email'></Input>
+                        <Input label='Telephone'></Input>
+                    </Box>
                 </form>
-            </div>
+            </Div>
         </div>
     )
 }
