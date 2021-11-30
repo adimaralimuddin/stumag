@@ -4,6 +4,7 @@ import Box from "../../component/Box"
 import Div from "../../component/Div"
 import { TextH2 } from "../../component/Text"
 import { TextH3 } from "../../component/Text"
+import Flex from "../../component/elements/Flex"
 
 export function Role(props) {
     let cls = props?.className + ' role-' + props?.children
@@ -20,12 +21,12 @@ export default function StuProfile() {
                 <BreadCrams path='student / mike jophen l'>Modify</BreadCrams>
                 <br />
                 <Box flx plr10per itemCenter wrap>
-                    <ProfileImg />
                     <br />
+                    <span className='flxC itemLeft ptb10'>
+                        <Role className='textLeft absolute flx itemCenter'>admin</Role>
+                        <ProfileImg />
+                    </span>
                     <Div>
-                        <span className='flx ptb10'>
-                            <Role className='textLeft '>admin</Role>
-                        </span>
                         <span className='flx wrap'>
                             <TextH2 label='First Name'>mike </TextH2>
                             <TextH2 label='Last Name'>jophen </TextH2>
@@ -39,9 +40,36 @@ export default function StuProfile() {
                             <TextH3 label='year'>2 year</TextH3>
                         </span>
 
+                        <Flex wrap>
+                            <TextH3 label='age'>20</TextH3>
+                            <TextH3 label='gender'>male</TextH3>
+                            <TextH3 label='status'>single</TextH3>
+                        </Flex>
+
                         <br />
 
                     </Div>
+                </Box>
+                <br />
+                <p>Contact / Address</p>
+                <br />
+                <Box>
+                    <Flex>
+                        <TextH3 label='contact'>0978452387</TextH3>
+                        <TextH3 label='email'>robert@gmail.com</TextH3>
+                        <TextH3 label='current address'>lamiun, bongao, tawi tawi</TextH3>
+                    </Flex>
+                </Box>
+                <br />
+                <p>Tuition</p>
+                <br />
+                <Box>
+                    <Flex wrap>
+                        <TextH3 label='tuition fee'>23,00</TextH3>
+                        <TextH3 label='balanced'>10,500</TextH3>
+                        <TextH3 label='paid'>15,500</TextH3>
+                        <TextH3 label='back account'>0</TextH3>
+                    </Flex>
                 </Box>
             </div>
 

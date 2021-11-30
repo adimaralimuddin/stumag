@@ -15,6 +15,7 @@ export default function Student() {
                 <Route {...stuPages.list} />
                 <Route {...TeachPages.list} />
                 <Route {...stuPages.add} />
+                <Route {...TeachPages.add} />
                 <Route {...stuPages.profile} />
                 <Route {...stuPages.subjects} />
                 <Route {...stuPages.course} />

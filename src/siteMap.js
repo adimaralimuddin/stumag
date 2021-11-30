@@ -6,6 +6,7 @@ import Student from './page/student/Student'
 import Register from './page/main/Register'
 import Login from './page/main/Login'
 import StuAdd from './page/student/stuAdd'
+import TeachAdd from './page/teacher/TeachAdd'
 import StuList from './page/student/StuList'
 import StuProfile from './page/student/stuProfile'
 import Subjects from './page/student/subject/Subjects'
@@ -51,7 +52,7 @@ export default function useSite() {
 
 export const stuPages = {
     add: {
-        path: 'add',
+        path: 'addstudent',
         element: <StuAdd />
     },
     list: {
@@ -75,11 +76,10 @@ export const stuPages = {
         element: <Courses />
     },
 }
-
 export const TeachPages = {
     add: {
-        path: 'add',
-        element: <StuAdd />
+        path: 'addteacher',
+        element: <TeachAdd />
     },
     list: {
         path: 'teacherlist',

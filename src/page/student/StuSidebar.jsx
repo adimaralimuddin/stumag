@@ -34,7 +34,7 @@ export default function StuSidebar(props) {
                 <SidebarMenu to={stuPages.list.path}>Student</SidebarMenu>
                 <SidebarMenu to={TeachPages.list.path}>teacher</SidebarMenu>
                 <SidebarMenu to={stuPages.add.path}>add student</SidebarMenu>
-                <SidebarMenu to={stuPages.add.path}>add teacherss</SidebarMenu>
+                <SidebarMenu to={TeachPages.add.path}>add teacherss</SidebarMenu>
                 <SidebarMenu to={stuPages.profile.path}>profile</SidebarMenu>
                 <SidebarMenu to={stuPages.subjects.path}>subjects</SidebarMenu>
                 <SidebarMenu to={stuPages.course.path}>courses</SidebarMenu>

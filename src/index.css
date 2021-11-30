@@ -97,6 +97,30 @@ button:hover{
 .absolute {position: absolute;}
 .fixed {position: fixed;}
 
+.t5 {top: 5px;}
+.t10 {top: 10px;}
+.t20 {top: 20px;}
+.t30 {top: 30px;}
+.t40 {top: 40px;}
+.t50 {top: 50px;}
+.t60 {top: 60px;}
+.t70 {top: 70px;}
+.t80 {top: 80px;}
+.t90 {top: 90px;}
+.t100 {top: 100px;}
+
+.l5 {left: 5px;}
+.l10 {left: 10px;}
+.l20 {left: 20px;}
+.l30 {left: 30px;}
+.l40 {left: 40px;}
+.l50 {left: 50px;}
+.l60 {left: 60px;}
+.l70 {left: 70px;}
+.l80 {left: 80px;}
+.l90 {left: 90px;}
+.l100 {left: 100px;}
+
 [noStyle] {list-style: none;text-decoration: none;}
 .noStyle, .noStyle a {list-style: none;text-decoration: none;}
 
@@ -107,12 +131,26 @@ button:hover{
 
 [flx] {display: flex;}
 .flx {display: flex;}
-.flxC {display: flex; flex-direction: column;}
 .flxCenter {display: flex;justify-content: center;}
+.flxEnd {display: flex;justify-content: end;}
+.flxStart {display: flex;justify-content: start;}
+.flxStetch {display: flex;justify-content: stretch;}
 .flxBetween {display: flex;justify-content: space-between;}
 .flxAround {display: flex;justify-content: space-around;}
 .flxEvenly {display: flex;justify-content:space-evenly;}
 .flxStretch {display: flex;justify-content:stretch;}
+
+.flxC {display: flex; flex-direction: column;}
+.flxCCenter {display: flex; flex-direction: column; justify-content: center;}
+.flxCBetween {display: flex; flex-direction: column; justify-content: space-between;}
+.flxCEvently {display: flex; flex-direction: column; justify-content: space-evenly;}
+.flxCAround {display: flex; flex-direction: column; justify-content: space-around;}
+.flxCStretch {display: flex; flex-direction: column; justify-content: stretch;}
+.flxCEnd {display: flex; flex-direction: column; justify-content: end;}
+.flxCStart {display: flex; flex-direction: column; justify-content: start;}
+.flxCLeft {display: flex; flex-direction: column; justify-content: left;}
+.flxCRight {display: flex; flex-direction: column; justify-content: right;}
+
 .flx1 {flex: 1;}
 .flx2 {flex: 2;}
 .flx3 {flex: 3;}
@@ -125,6 +163,7 @@ button:hover{
 
 .textLeft {text-align: left;}
 .itemCenter {align-items: center;}
+.itemLeft {align-items: left;}
 .contentCenter {align-content: center;}
 .contentLeft {align-content: left;}
 

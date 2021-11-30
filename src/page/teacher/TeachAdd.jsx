@@ -20,43 +20,43 @@ export default function StuAdd() {
             <Div flx1 w100per mxw900>
                 <form action="" >
 
-                    <BreadCrams path='Student / add' >Add Student</BreadCrams>
+                    <BreadCrams path='Teacher / add' >Add Teacher</BreadCrams>
 
                     <Caption>Primary Info</Caption>
 
                     <Box p20>
                         <br />
-                        <Flex p20 wrap>
+                        <Flex p20>
 
                             <ProfileImg />
+                            <div>
+
+                                {/* <button>upload file</button> */}
+                            </div>
                         </Flex>
                         <Names />
-                        <Flex wrpa>
-                            <Course />
-                            <Year />
-                        </Flex>
                         <Flex wrap>
                             <Input className='mxw100' label='age'></Input>
                             <Input className='mxw100' label='gender'></Input>
                             <Input label='Date Of Birth'></Input>
                             <Input label='Place Of Birth'></Input>
                         </Flex>
-                        <br />
                     </Box>
 
-                    <Caption>Tuition</Caption>
-                    <Box wrap flx plr20>
-                        <Input label='Tuition Fee'></Input>
-                        <Input label='Balanced'></Input>
-                        <Input label='Paied'></Input>
-                        <Input label='Back Account'></Input>
-                    </Box>
 
                     <Caption>Contact</Caption>
                     <Box flx wrap plr20>
                         <Input label='mobile Number'></Input>
                         <Input label='Email'></Input>
                         <Input label='Telephone'></Input>
+                    </Box>
+
+                    <Caption>Current Address</Caption>
+                    <Box flx wrap plr20>
+                        <Input label='house Number'></Input>
+                        <Input label='street'></Input>
+                        <Input label='city'></Input>
+                        <Input label='zip code'></Input>
                     </Box>
                 </form>
             </Div>
