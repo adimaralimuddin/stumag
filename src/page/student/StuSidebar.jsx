@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom"
-import { stuPages } from "../../siteMap"
+import { stuPages,TeachPages } from "../../siteMap"
+
 
 export function SidebarMenu(props) {
     return <> <Link {...props} >
@@ -30,8 +31,10 @@ export default function StuSidebar(props) {
             <div className='fixed flxC hide1000  mnw150'>
 
                 <br />
-                <SidebarMenu to={stuPages.list.path}>list</SidebarMenu>
-                <SidebarMenu to={stuPages.add.path}>add</SidebarMenu>
+                <SidebarMenu to={stuPages.list.path}>Student</SidebarMenu>
+                <SidebarMenu to={TeachPages.list.path}>teacher</SidebarMenu>
+                <SidebarMenu to={stuPages.add.path}>add student</SidebarMenu>
+                <SidebarMenu to={stuPages.add.path}>add teacher</SidebarMenu>
                 <SidebarMenu to={stuPages.profile.path}>profile</SidebarMenu>
                 <SidebarMenu to={stuPages.subjects.path}>subjects</SidebarMenu>
                 <SidebarMenu to={stuPages.course.path}>courses</SidebarMenu>

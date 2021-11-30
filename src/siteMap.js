@@ -8,8 +8,9 @@ import Login from './page/main/Login'
 import StuAdd from './page/student/stuAdd'
 import StuList from './page/student/StuList'
 import StuProfile from './page/student/stuProfile'
-import Subjects from './page/student/Subjects'
+import Subjects from './page/student/subject/Subjects'
 import Courses from './page/student/course/Courses'
+import TeachList from './page/teacher/teachList'
 
 export default function useSite() {
     const site = {
@@ -54,7 +55,7 @@ export const stuPages = {
         element: <StuAdd />
     },
     list: {
-        path: 'list',
+        path: 'studentlist',
         element: <StuList />
     },
     ['']: {
@@ -65,12 +66,39 @@ export const stuPages = {
         path: 'profile',
         element: <StuProfile />
     },
-    subjects:{
-        path:'subjects',
-        element:<Subjects/>
+    subjects: {
+        path: 'subjects',
+        element: <Subjects />
     },
-    course:{
-        path:'course',
-        element:<Courses/>
+    course: {
+        path: 'course',
+        element: <Courses />
+    },
+}
+
+export const TeachPages = {
+    add: {
+        path: 'add',
+        element: <StuAdd />
+    },
+    list: {
+        path: 'teacherlist',
+        element: <TeachList />
+    },
+    ['']: {
+        path: '',
+        element: <StuList />
+    },
+    profile: {
+        path: 'profile',
+        element: <StuProfile />
+    },
+    subjects: {
+        path: 'subjects',
+        element: <Subjects />
+    },
+    course: {
+        path: 'course',
+        element: <Courses />
     },
 }
